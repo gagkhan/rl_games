@@ -78,7 +78,7 @@ def safe_save(state, filename):
 
 
 def safe_load(filename):
-    return safe_filesystem_op(torch.load, filename, map_lccation="cuda:0")
+    return safe_filesystem_op(torch.load, filename, map_location="cuda:0")
 
 
 def save_checkpoint(filename, state):
